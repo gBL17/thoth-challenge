@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@font-face {
+	font-family: BeVietnamPro;
+	src: url(assets/fonts/BeVietnamPro-Regular.ttf) format('truetype');
+}
 
 * {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: BeVietnamPro;
 }
 
 html, body, div, span, applet, object, iframe,
