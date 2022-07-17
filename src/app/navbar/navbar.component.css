@@ -1,0 +1,27 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #405D6D;
+    padding: 5px;
+    border-bottom: 5px solid #33C5F3;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 30%;
+}
+
+.navLink{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    padding: 10px;
+}
