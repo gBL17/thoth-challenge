@@ -34,22 +34,20 @@
     font-size: 2em;
     text-align: center;
     color: #fff;
-    margin: 60px 0 30px;
+    margin: 50px 0 30px;
 }
 
 label{
     color: #fff;
-    margin: 0 0 0.2rem 1rem
+    margin: 0 0 0.3rem 1rem
 }
 
 input {
-    border-radius: 10px;
-    height: 2.5rem;
-    outline: none; 
-    border-color: inherit;
-    -webkit-box-shadow: none; 
+    border-radius: 6px;
+    height: 2rem;
     box-shadow: none;
     border: transparent;
+    padding-left: 1rem;
 }
 
 .buttonDiv {
