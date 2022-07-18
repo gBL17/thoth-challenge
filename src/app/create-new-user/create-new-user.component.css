@@ -77,6 +77,8 @@ input {
 }
 
 .signIn:disabled{
-    background-color: #ccc;
+    background-color: #5399AE;
+    color: #fff;
+    opacity: 0.4;
 }
 
