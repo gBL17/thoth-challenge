@@ -1,6 +1,6 @@
 <div class="outForms">
   <div class="forms">
-    <form class="">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
         <div class="info">
             <div class="inputField">
                 <div class="inputGroup">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="inputGroup">
                     <label for="passwordCheck" class="passwordCheckLabel">Confirmar Senha</label>
-                    <input type="password" name="passwordCheck" id="passwordCheck" formControlName="passwordCheck" required>
+                    <input type="password" name="passwordCheck" id="passwordCheck" required>
                 </div>
             </div>
         </div>
@@ -59,8 +59,8 @@
             </div>
             <div class="inputField">
                 <div class="inputGroup">
-                    <label for="number" class="numberLabel">Número</label>
-                    <input type="text" name="number" id="number" formControlName="number" required>
+                    <label for="numb" class="numberLabel">Número</label>
+                    <input type="text" name="number" id="number" formControlName="numb" required>
                 </div>
                 <div class="inputGroup">
                     <label for="complement" class="complementLabel">Complemento</label>
@@ -78,10 +78,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="buttonDiv">
+            <button type="submit" [disabled]="!userForm.valid" class="signIn">Cadastre-se</button>
+        </div>
       </form>
-          
-      <div class="buttonDiv">
-          <button class="signIn">Cadastre-se</button>
-      </div>
   </div>
 </div>
