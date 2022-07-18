@@ -5,41 +5,41 @@
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="name" class="nameLabel">Nome</label>
-                    <input type="text" name="name" id="name" formControlName="name">
+                    <input type="text" name="name" id="name" formControlName="name" required>
                 </div>
                 <div class="inputGroup">
                     <label for="lastName" class="lastNameLabel">Sobrenome</label>
-                    <input type="text" name="lastName" id="lastName" formControlName="lastName">
+                    <input type="text" name="lastName" id="lastName" formControlName="lastName" required>
                 </div>
             </div>
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="date" class="dateLabel">Data de Nascimento</label>
-                    <input class="dateInput" type="date" name="date" id="date" formControlName="date" placeholder="17/07/1999">
+                    <input class="dateInput" type="date" name="date" id="date" formControlName="date" required>
                 </div>
                 <div class="inputGroup">
                     <label for="cpf" class="cpfLabel">CPF</label>
-                    <input type="number" name="cpf" id="cpf" formControlName="cpf">
+                    <input type="text" name="cpf" id="cpf" [mask]="'000.000.000-AA'" formControlName="cpf" required>
                 </div>
             </div>
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="phone" class="phoneLabel">Telefone</label>
-                    <input type="tel" name="phone" id="phone" formControlName="phone">
+                    <input type="tel" name="phone" id="phone" [mask]="'(00) 00000-0000'" formControlName="phone" required>
                 </div>
                 <div class="inputGroup">
                     <label for="email" class="emailLabel">E-mail</label>
-                    <input type="email" name="email" id="email" formControlName="email">
+                    <input type="email" name="email" id="email" formControlName="email" required>
                 </div>
             </div>
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="password" class="passwordLabel">Senha</label>
-                    <input type="password" name="password" id="password" formControlName="password">
+                    <input type="password" name="password" id="password" formControlName="password" required>
                 </div>
                 <div class="inputGroup">
                     <label for="passwordCheck" class="passwordCheckLabel">Confirmar Senha</label>
-                    <input type="password" name="passwordCheck" id="passwordCheck" formControlName="passwordCheck">
+                    <input type="password" name="passwordCheck" id="passwordCheck" formControlName="passwordCheck" required>
                 </div>
             </div>
         </div>
@@ -50,31 +50,31 @@
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="cep" class="cepLabel">CEP</label>
-                    <input type="text" name="cep" id="cep" formControlName="cep">
+                    <input type="text" name="cep" id="cep" formControlName="cep" [mask]="'00000-000'" required>
                 </div>
                 <div class="inputGroup">
                     <label for="streetName" class="streetNameLabel">Logradouro</label>
-                    <input type="text" name="streetName" id="streetName" formControlName="streetName">
+                    <input type="text" name="streetName" id="streetName" formControlName="streetName" required>
                 </div>
             </div>
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="number" class="numberLabel">Número</label>
-                    <input type="text" name="number" id="number" formControlName="number">
+                    <input type="text" name="number" id="number" formControlName="number" required>
                 </div>
                 <div class="inputGroup">
                     <label for="complement" class="complementLabel">Complemento</label>
-                    <input type="text" name="complement" id="complement" formControlName="complement">
+                    <input type="text" name="complement" id="complement" formControlName="complement" required>
                 </div>
             </div>
             <div class="inputField">
                 <div class="inputGroup">
                     <label for="district" class="districtLabel">Bairro</label>
-                    <input type="text" name="district" id="district" formControlName="district">
+                    <input type="text" name="district" id="district" formControlName="district" required>
                 </div>
                 <div class="inputGroup">
                     <label for="city" class="cityLabel">Cidade</label>
-                    <input type="text" name="city" id="city" formControlName="city">
+                    <input type="text" name="city" id="city" formControlName="city" required>
                 </div>
             </div>
         </div>
