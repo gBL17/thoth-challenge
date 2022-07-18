@@ -72,3 +72,11 @@ input {
     border: none;
 }
 
+.signIn:enabled:hover{
+    cursor: pointer;
+}
+
+.signIn:disabled{
+    background-color: #ccc;
+}
+
