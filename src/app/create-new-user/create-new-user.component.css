@@ -8,13 +8,17 @@
 
 .forms{
     width: 80%;
-    height: 84vh;
+    height: 82vh;
     max-width: 1200px;
     max-height: 1400px;
     margin: 0 auto;
     background: #405D6D;
     border-radius: 10px;
     padding-top: 29px;
+}
+
+#cpf{
+    text-transform: uppercase;
 }
 
 .inputField {
@@ -67,3 +71,14 @@ input {
     border-radius: 10px;
     border: none;
 }
+
+.signIn:enabled:hover{
+    cursor: pointer;
+}
+
+.signIn:disabled{
+    background-color: #5399AE;
+    color: #fff;
+    opacity: 0.4;
+}
+
